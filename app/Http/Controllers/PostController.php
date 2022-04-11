@@ -9,8 +9,9 @@ class PostController extends Controller
 {
      public function index()
     {
+        // CREATION DU SLUG ET INSERTION DANS LA BASE DE DONNEES
         $post = Post::create([
-            "name" => "Back to future",
+            "name" => "je suis content",
             "slug" => "laravel-generate-multi-slug-on-load",
             "description" => "This is just the laravel slug example"
         ]);
